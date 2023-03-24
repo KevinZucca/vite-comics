@@ -42,9 +42,7 @@
        
 
         .container-centered {
-            height: 100%;
-            padding: 10px;
-
+            
             #logo{
                 flex-grow: 1;
             }
