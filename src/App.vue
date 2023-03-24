@@ -1,6 +1,8 @@
 <script>
   import AppHeader from "./components/AppHeader.vue"
   import AppMain1 from "./components/AppMain1.vue"
+  import AppMain2 from "./components/AppMain2.vue"
+
 
 
 
@@ -12,7 +14,8 @@
     },
     components: {
       AppHeader,
-      AppMain1
+      AppMain1,
+      AppMain2
     },
 
     methods: {}
@@ -23,6 +26,7 @@
 <template>
   <AppHeader></AppHeader>
   <AppMain1></AppMain1>
+  <AppMain2></AppMain2>
 </template>
 
 <style>
