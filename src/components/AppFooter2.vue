@@ -44,10 +44,20 @@
 
                 border: 3px solid #176bdd;
                 background-color: #303030;
+
+                &:hover {
+                    border: 3px solid #ff585883;
+                    filter: brightness(120%);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
             }
 
             h4 {
                 color: #176bdd;
+
+                &:hover {
+                    text-shadow: 2px 1px 4px rgba($color: #27409c44, $alpha: 1.0);
+                }
             }
 
             #social-logos {
@@ -56,6 +66,12 @@
                 gap: 20px;
 
                 cursor: pointer;
+
+                img:hover {
+                    scale: 1.2;
+                    filter: brightness(200%);
+                }
+
             }
         }
     }

@@ -116,13 +116,25 @@
                         text-transform: uppercase;
                         color: white;
                         padding-bottom: 10px;
+
+                        &:hover {
+                            text-shadow: 2px 1px 4px rgba($color: #d6d6d6, $alpha: 1.0);
+                        }
                     }
 
                     a {
                         color: #959595;
+
+                        &:hover {
+                            text-shadow: 2px 1px 4px rgba($color: #d6d6d6, $alpha: 1.0);
+                        }
                     }
                 }
                 }
+            }
+
+            #big-logo {
+                pointer-events: none;
             }
         }
 
