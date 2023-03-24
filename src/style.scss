@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: black;
-  background-color: white;
+  background-color: #202020;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,5 +32,10 @@
 
 li {
   list-style-type: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 

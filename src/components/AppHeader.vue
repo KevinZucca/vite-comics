@@ -27,9 +27,9 @@
             <div id="logo">
                 <img src="/public/img/dc-logo.png" alt="logo">
             </div>
-            <div id="links" v-for="link in links">
+            <a id="links" v-for="link in links">
                 {{ link }}
-            </div>
+            </a>
         </div>
     </header>
 </template>
@@ -38,6 +38,8 @@
 <style lang="scss" scoped>
     header {
         height: 120px;
+
+        background-color: #fff;
         border: 1px solid black;
        
 
@@ -45,6 +47,7 @@
             
             #logo{
                 flex-grow: 1;
+                cursor: pointer;
             }
 
 
@@ -53,6 +56,8 @@
                 font-weight: bold;
                 color: #464646;
                 padding: 8px;
+
+                cursor: pointer;
             }
         }
     }

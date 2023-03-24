@@ -37,7 +37,7 @@
             <ul id="shop-links">
                 <li v-for="link in links">
                      <img :src="link.img" alt="">
-                     <p>{{ link.link }}</p>
+                     <a>{{ link.link }}</a>
                 </li>
             </ul>
        </div>

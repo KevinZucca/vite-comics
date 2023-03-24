@@ -65,9 +65,9 @@
                     <h3>
                         {{ column.title }}
                     </h3>
-                    <p v-for="link in column.links">
+                    <a v-for="link in column.links">
                         {{ link }}
-                    </p>
+                    </a>
                 </li>
             </ul>
           </div>          
@@ -118,7 +118,7 @@
                         padding-bottom: 10px;
                     }
 
-                    p{
+                    a {
                         color: #959595;
                     }
                 }
