@@ -69,7 +69,6 @@
                 cursor: pointer;
 
                 &:hover {
-                    text-shadow: 1px 1px 6px rgba($color: #3b7ad861, $alpha: 1.0);
                     border-bottom: 6px solid #0282f9;
                     color: #0282f9;
                 }

@@ -69,16 +69,13 @@
 
                     &:hover {
                         text-shadow: 2px 1px 4px rgba($color: #d6d6d6, $alpha: 1.0);
+                        scale: 1.1;
                     }
                 }
 
                 img {
                     height: 50px;
                     width: 40px ;
-
-                    &:hover {
-                        scale: 1.2;
-                    }
                 }
 
             }

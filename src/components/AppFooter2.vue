@@ -57,6 +57,9 @@
 
                 &:hover {
                     text-shadow: 2px 1px 4px rgba($color: #27409c44, $alpha: 1.0);
+                    scale: 1.1;
+                    color: #5295f2;
+
                 }
             }
 
