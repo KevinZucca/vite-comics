@@ -14,11 +14,10 @@
             "news",
             "shop"
         ]
-      };
-
-      methods: {
-      }
+      }      
     },
+    methods: {
+      }
     
   }
 </script>
@@ -43,7 +42,6 @@
         height: 120px;
 
         background-color: #fff;
-        border: 1px solid black;
        
 
         .container-centered {
