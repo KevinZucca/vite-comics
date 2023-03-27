@@ -20,10 +20,12 @@
     <div class="container">
         <div class="container-centered">
             <div id="left-button">
-                <button>SIGN-UP-NOW</button>
+                <button>
+                    <a href="#">SIGN-UP-NOW</a>
+                </button>
             </div>
             <div id="social-logos">
-                <h4>FOLLOW US</h4>
+                <a id="follow" href="#">FOLLOW US</a>
                 <img v-for="logo in logos" :src="logo" alt="logo-social">
             </div>
         </div>
@@ -45,6 +47,11 @@
                 border: 3px solid #176bdd;
                 background-color: #303030;
 
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
                 &:hover {
                     border: 3px solid #ff585883;
                     filter: brightness(120%);
@@ -52,8 +59,10 @@
                 }
             }
 
-            h4 {
+            #follow {
                 color: #176bdd;
+                text-decoration: none;
+                font-weight: bold;
 
                 &:hover {
                     text-shadow: 2px 1px 4px rgba($color: #27409c44, $alpha: 1.0);

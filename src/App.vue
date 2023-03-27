@@ -1,5 +1,6 @@
 <script>
   import AppHeader from "./components/AppHeader.vue"
+  import AppJumbo from "./components/AppJumbo.vue"
   import AppMain1 from "./components/AppMain1.vue"
   import AppMain2 from "./components/AppMain2.vue"
   import AppFooter1 from "./components/AppFooter1.vue"
@@ -16,6 +17,7 @@
     },
     components: {
       AppHeader,
+      AppJumbo,
       AppMain1,
       AppMain2,
       AppFooter1,
@@ -29,6 +31,7 @@
 
 <template>
   <AppHeader></AppHeader>
+  <AppJumbo></AppJumbo>
   <AppMain1></AppMain1>
   <AppMain2></AppMain2>
   <AppFooter1></AppFooter1>

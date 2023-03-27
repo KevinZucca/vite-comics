@@ -37,7 +37,7 @@
             <ul id="shop-links">
                 <li v-for="link in links">
                      <img :src="link.img" alt="">
-                     <a>{{ link.link }}</a>
+                     <a href="#">{{ link.link }}</a>
                 </li>
             </ul>
        </div>
@@ -66,6 +66,11 @@
                     flex-flow: row nowrap;
                     align-items: center;
                     gap: 5px;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
 
                     &:hover {
                         text-shadow: 2px 1px 4px rgba($color: #d6d6d6, $alpha: 1.0);

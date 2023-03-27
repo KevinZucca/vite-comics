@@ -62,10 +62,10 @@
           <div id="columns-container">
             <ul v-for="column in footerLinks">
                 <li>
-                    <h3>
+                    <a href="#" id="title">
                         {{ column.title }}
-                    </h3>
-                    <a v-for="link in column.links">
+                    </a>
+                    <a id="links" href="#" v-for="link in column.links">
                         {{ link }}
                     </a>
                 </li>
@@ -112,8 +112,10 @@
                         display: flex;
                         flex-flow: column;
 
-                    h3 {
+                    #title {
                         text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 1.2em;
                         color: white;
                         padding-bottom: 10px;
 
@@ -122,8 +124,9 @@
                         }
                     }
 
-                    a {
+                    #links {
                         color: #959595;
+                        text-decoration: none;
 
                         &:hover {
                             text-shadow: 2px 1px 4px rgba($color: #d6d6d6, $alpha: 1.0);

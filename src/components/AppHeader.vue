@@ -15,6 +15,9 @@
             "shop"
         ]
       };
+
+      methods: {
+      }
     },
     
   }
@@ -25,9 +28,9 @@
     <header>
         <div class="container-centered">
             <div id="logo">
-                <img src="/public/img/dc-logo.png" alt="logo">
+                <img @click="window.location.reload()" src="/public/img/dc-logo.png" alt="logo">
             </div>
-            <a id="links" v-for="link in links">
+            <a href="#" id="links" v-for="link in links">
                 {{ link }}
             </a>
         </div>
@@ -61,6 +64,7 @@
 
 
                 text-transform: uppercase;
+                text-decoration: none;
                 font-weight: bold;
                 color: #464646;
                 padding: 8px;
