@@ -13,10 +13,17 @@
             "fans",
             "news",
             "shop"
-        ]
+        ],
       }      
     },
     methods: {
+        activateLink(event) {
+            const links = document.querySelectorAll("#links")
+            links.forEach((link) =>{
+                link.classList.remove("active")
+            })
+            event.target.classList.add("active")
+        }
       }
     
   }
@@ -29,7 +36,7 @@
             <div id="logo">
                 <img @click="window.location.reload()" src="/public/img/dc-logo.png" alt="logo">
             </div>
-            <a href="#" id="links" v-for="link in links">
+            <a href="#" id="links" @click="activateLink" v-for="link in links">
                 {{ link }}
             </a>
         </div>
@@ -69,11 +76,11 @@
                 padding-bottom: 0;
 
                 cursor: pointer;
+            }
 
-                &:hover {
-                    border-bottom: 6px solid #0282f9;
-                    color: #0282f9;
-                }
+            .active {
+                border-bottom: 6px solid #0282f9;
+                color: #0282f9;
             }
         }
     }
